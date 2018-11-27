@@ -30,7 +30,7 @@ int main()
             if(f(xo)*f(x1)<0)x2=xo;
             else x1=xo;
             printf("x1=%.7f x2=%.7f\n",x1,x2);
-            if(fabs((x2-x1)/2)<EPS)
+            if(fabs((x2-x1)/x2)<EPS)
             {
                 printf("%.7f\n",(x1+x2)/2);
                 flag=1;
