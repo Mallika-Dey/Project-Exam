@@ -29,7 +29,12 @@ int main()
             xo=(x1+x2)/2.0;
             if(f(xo)*f(x1)<0)x2=xo;
             else x1=xo;
-            printf("x1=%.7f x2=%.7f\n",x1,x2);
+            printf("x1=%.7f \tx2=%.7f\n",x1,x2);
+            if(f(xo)==0)
+            {
+                printf("%.7f\n",xo);
+                break;
+            }
             if(fabs((x2-x1)/x2)<EPS)
             {
                 printf("%.7f\n",(x1+x2)/2);
